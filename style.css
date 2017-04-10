@@ -1,8 +1,13 @@
 * {
-  * {
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #4577c6;
+}
+#salmon {
+  width: 50%;
+  height: 50%;
 }
