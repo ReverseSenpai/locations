@@ -34,9 +34,13 @@ var store5 = {
   avgCookie: 4.6,
 }
 
-function random(minCust,maxCust) {
+function randomNumber(minCust,maxCust) {
   minCust = Math.ceil(minCust);
   maxCust = Math.floor(maxCust);
   return Math.floor(Math.random() * (maxCust - minCust + 1)) + minCust;
+  }
+var set= [];
+for (var i = 0; i < 14; i ++) {
+  set[i] = randomNumber(store5.minCust,store5.maxCust);
 }
-console.log(random(store4.minCust,store4.maxCust));
+document.write(set + ' cookies sold per hour');
